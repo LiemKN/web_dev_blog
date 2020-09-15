@@ -5,3 +5,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+#middler {
+  display: flex;
+  flex-direction: row;
+}
