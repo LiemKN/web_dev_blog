@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: tan;
+  background-image: url("mt_fuji.jpg");
 }
 
 #body-container {
@@ -17,7 +17,7 @@ body {
 
 #chester {
   flex-grow: 1;
-  flex-basis: 0;
+  flex-basis: 0; /* without this it can take on any width depending on the window size; now the lefter and righter act as true proportions of the parent */
 }
 
 #lefter, #righter {
