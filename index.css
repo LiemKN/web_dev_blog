@@ -2,10 +2,13 @@ body {
   margin: 0;
 }
 
-#body-container {
+body::after {
   background-image: url("mt_fuji.jpg");
   background-size: cover;
   opacity: 0.5;
+}
+
+#body-container {
   display: flex;
   flex-direction: column;
 }
