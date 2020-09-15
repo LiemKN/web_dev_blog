@@ -2,5 +2,6 @@ body {
   margin: 0;
   background-image: url("mt_fuji.jpg");
   background-size: cover;
-  opacity: 0.3;
+  display: flex;
+  flex-direction: column;
 }
