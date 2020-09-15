@@ -9,6 +9,12 @@ body {
 }
 
 #middler {
+  flex-grow: 1;
   display: flex;
   flex-direction: row;
+}
+
+#lefter, #righter {
+  background-color: darkorange;
+  flex-basis: 200px;
 }
