@@ -6,12 +6,18 @@ body {
 #body-container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 #middler {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
+}
+
+#chester {
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 #lefter, #righter {
