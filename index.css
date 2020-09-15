@@ -25,3 +25,7 @@ body {
   background-color: forestgreen;
   flex-basis: 200px;
 }
+
+footer {
+  color: aliceblue;
+}
