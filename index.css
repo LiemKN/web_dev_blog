@@ -3,12 +3,13 @@ body {
 }
 
 body::before {
-  background-image: url("mt_fuji.jpg");
-  background-size: cover;
-  opacity: 0.5;
+  
 }
 
 #body-container {
+  background-image: url("mt_fuji.jpg");
+  background-size: cover;
+  opacity: 0.5;
   display: flex;
   flex-direction: column;
 }
