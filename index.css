@@ -22,6 +22,6 @@ body {
 }
 
 #lefter, #righter {
-  background-color: darkorange;
+  background-color: forestgreen;
   flex-basis: 200px;
 }
