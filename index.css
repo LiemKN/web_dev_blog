@@ -8,6 +8,10 @@ body {
   background-size: cover;
 }
 
+a {
+  text-decoration: none;
+}
+
 #body-container {
   display: flex;
   flex-direction: column;
@@ -28,14 +32,43 @@ header {
   flex-direction: row;
 }
 
-#chester {
-  flex-grow: 1;
-  flex-basis: 0; /* without this it can take on any width depending on the window size; now the lefter and righter act as true proportions of the parent */
-}
-
 #lefter {
   display: flex;
   flex-direction: column;
+}
+
+#chester {
+  flex-grow: 1;
+  flex-basis: 0; /* without this it can take on any width depending on the window size; now the lefter and righter act as true proportions of the parent */
+  display: flex;
+  flex-direction: column;
+}
+
+#chester-lower {
+  padding-top: 10px;
+  flex-grow: 1;
+}
+
+#chester-lower > a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid black;
+  padding: 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#chester-lower > a:hover {
+  color: white;
+  background-color: black;
+  border: 3px solid white;
+  
+}
+
+#blog-entries {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #lefter, #righter {
@@ -43,5 +76,10 @@ header {
 }
 
 footer {
+  background-color: black;
   color: aliceblue;
+}
+
+footer > p > a {
+  color: cornflowerblue;
 }
