@@ -1,3 +1,6 @@
+/* font-family: 'Comfortaa', cursive;
+font-family: 'Crimson Text', serif;
+font-family: 'Source Sans Pro', sans-serif; */
 body {
   margin: 0;
   background-image: url("lightbulb.jpg");
@@ -12,6 +15,13 @@ body {
   height: 100vh;
 }
 
+header {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+}
+
 #middler {
   flex-grow: 1;
   display: flex;
@@ -21,6 +31,11 @@ body {
 #chester {
   flex-grow: 1;
   flex-basis: 0; /* without this it can take on any width depending on the window size; now the lefter and righter act as true proportions of the parent */
+}
+
+#lefter {
+  display: flex;
+  flex-direction: column;
 }
 
 #lefter, #righter {
