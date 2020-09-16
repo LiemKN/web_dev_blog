@@ -3,7 +3,7 @@ font-family: 'Crimson Text', serif;
 font-family: 'Source Sans Pro', sans-serif; */
 body {
   margin: 0;
-  background-image: url("main_lightbulb.jpg");
+  background-image: url("index_lightbulb.jpg");
   background-position: center center;
   background-size: cover;
 }
