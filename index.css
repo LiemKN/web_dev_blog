@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-image: url("lightbulb.jpg");
+  background-position: center center;
   background-size: cover;
 }
 
