@@ -1,0 +1,103 @@
+/*
+font-family: 'Fredoka One', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+body {
+  margin: 0;
+  background: url("index_lightbulb.jpg") center center fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+#body-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  padding: 15px;
+  position: fixed;
+}
+
+header > a {
+  padding: 5px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header > a:hover {
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+#middler {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+#chester {
+  padding: 25px;
+  background-color: rgba(255,228,196,0.85);
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 700px;
+  flex-grow: 1;
+  flex-basis: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#font {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 0 10 0 10;
+  margin: 0;
+}
+
+img {
+  text-align: center;
+  max-width: 100%;
+}
+
+#chester > p > a {
+  color: cornflowerblue;
+}
+
+#fredoka {
+  font-family: 'Fredoka One', cursive;
+}
+
+#righteous {
+  font-family: 'Righteous', cursive;
+}
+
+#lobster {
+  font-family: 'Lobster', cursive;
+}
+
+#lefter, #righter {
+  flex-basis: 200px;
+}
+
+footer {
+  background-color: black;
+  color: aliceblue;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+footer > p > a {
+  color: cornflowerblue;
+}

@@ -1,10 +1,13 @@
-/* font-family: 'Comfortaa', cursive;
+/*
+font-family: 'Comfortaa', cursive;
 font-family: 'Crimson Text', serif;
-font-family: 'Source Sans Pro', sans-serif; */
+font-family: 'Source Sans Pro', sans-serif;
+*/
 body {
   margin: 0;
   background-image: url("index_lightbulb.jpg");
   background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -15,15 +18,17 @@ a {
 #body-container {
   display: flex;
   flex-direction: column;
-  background-color:rgba(0,0,0,.4);
   height: 100vh;
 }
 
 header {
-  background-color: black;
-  color: aliceblue;
   text-align: center;
   font-family: 'Comfortaa', cursive;
+  font-size: 1.5em;
+}
+
+header > h1 > a {
+  color: black;
 }
 
 #middler {
@@ -32,16 +37,16 @@ header {
   flex-direction: row;
 }
 
-#lefter {
-  display: flex;
-  flex-direction: column;
-}
-
 #chester {
   flex-grow: 1;
   flex-basis: 0; /* without this it can take on any width depending on the window size; now the lefter and righter act as true proportions of the parent */
   display: flex;
   flex-direction: column;
+}
+
+#chester-upper {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.35em;
 }
 
 #chester-lower {
@@ -67,10 +72,6 @@ header {
   
 }
 
-#blog-entries {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
 #lefter, #righter {
   flex-basis: 200px;
 }
@@ -78,6 +79,7 @@ header {
 footer {
   background-color: black;
   color: aliceblue;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 footer > p > a {
