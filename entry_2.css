@@ -4,11 +4,11 @@ font-family: 'Lobster', cursive;
 font-family: 'Righteous', cursive;
 font-family: 'Source Sans Pro', sans-serif;
 */
-body {
+/* body {
   margin: 0;
   background: url("index_lightbulb.jpg") center center fixed;
   background-size: cover;
-}
+} */
 
 a {
   text-decoration: none;
@@ -49,7 +49,7 @@ header > a:hover {
 
 #chester {
   padding: 25px;
-  background-color: rgba(255,228,196,0.85);
+  background-color: rgba(255,255,255,0.85);
   border-radius: 10px;
   margin: 10px;
   max-width: 700px;
@@ -58,7 +58,7 @@ header > a:hover {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-#font {
+.heading {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
   text-align: center;
@@ -96,6 +96,11 @@ footer {
   color: aliceblue;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+}
+
+footer > p {
+  text-align: right;
+  padding-right: 10px;
 }
 
 footer > p > a {
