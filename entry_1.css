@@ -4,11 +4,11 @@ font-family: 'Lobster', cursive;
 font-family: 'Righteous', cursive;
 font-family: 'Source Sans Pro', sans-serif;
 */
-/* body {
+body {
     margin: 0;
     background: url("index_lightbulb.jpg") center center fixed;
     background-size: cover;
-  } */
+  }
   
 a {
   text-decoration: none;
