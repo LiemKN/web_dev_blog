@@ -3,13 +3,13 @@ font-family: 'Comfortaa', cursive;
 font-family: 'Crimson Text', serif;
 font-family: 'Source Sans Pro', sans-serif;
 */
-/* body {
+body {
   margin: 0;
   background-image: url("index_lightbulb.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-} */
+}
 
 a {
   text-decoration: none;
@@ -65,11 +65,11 @@ header > h1 > a {
   transition: 0.5s;
 }
 
-/* #chester-lower > a:hover {
+#chester-lower > a:hover {
   color: white;
   background-color: black;
   border: 3px solid white;
-} */
+}
 
 #lefter, #righter {
   flex-basis: 200px;
