@@ -6,13 +6,13 @@ font-family: 'Source Sans Pro', sans-serif;
 */
 body {
     margin: 0;
-    background: url("index_lightbulb.jpg") center center fixed;
+    background: url("../images/index_lightbulb.jpg") center center fixed;
     background-size: cover;
   }
   
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
   
   #body-container {
     display: flex;
@@ -65,13 +65,10 @@ body {
     padding: 0 10 0 10;
     margin: 0;
   }
-
-  #color-meaning {
-    max-width: 90%;
-  }
   
-  .image {
-    text-align: center;
+  img {
+    text-align: left;
+    max-width: 100%;
   }
   
   #chester > p > a {
@@ -89,11 +86,11 @@ body {
     font-weight: 300;
   }
   
-  footer > p {
+footer > p {
     text-align: right;
     padding-right: 10px;
-  }
-  
+}
+
   footer > p > a {
     color: cornflowerblue;
   }

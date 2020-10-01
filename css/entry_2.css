@@ -6,7 +6,7 @@ font-family: 'Source Sans Pro', sans-serif;
 */
 body {
   margin: 0;
-  background: url("index_lightbulb.jpg") center center fixed;
+  background: url("../images/index_lightbulb.jpg") center center fixed;
   background-size: cover;
 }
 
