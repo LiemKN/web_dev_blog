@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Righteous&family=Source+Sans+Pro:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/entry.css">
+  <title>JSON</title>
+</head>
+
+<body>
+  <div id="body-container">
+    <header><a href="index.html">&#x25C0 Main Page</a></header>
+    <div id="middler">
+      <aside id="lefter"></aside>
+      <div id="chester">
+        <p class="heading">JSON</p>
+        <p>
+          JSON stands for JavaScript Object Notation and is a format for storing and transporting data. It is used to
+          send data from a server to a webpage and is known as "self-describing" and easy to use. JSON is built on two
+          structures. First, a collection of name value pairs called an object in JSON, which may be known as a record,
+          dictionary, hash table, etc in other languages. Second is an ordered list of values commonly known as an
+          array. The following is an example of JSON objects being put in a JSON array.
+        </p>
+        <pre>
+            {
+              "employees":[
+                {"firstName":"John", "lastName":"Doe"},
+                {"firstName":"Anna", "lastName":"Smith"},
+                {"firstName":"Peter", "lastName":"Jones"}
+              ]
+            }
+        </pre>
+        <p>
+          To use JSON text in JavaScript, create a JavaScript string containing JSON syntax.
+        </p>
+        <pre>
+          var text = '{ "employees" : [' +
+            '{ "firstName":"John" , "lastName":"Doe" },' +
+            '{ "firstName":"Anna" , "lastName":"Smith" },' +
+            '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+        </pre>
+        <p>
+          Next, use the JavaScript function, JSON.parse(), to convert the previously made string into a JavaScript object.
+        </p>
+        <pre>
+          var obj = JSON.parse(text);
+        </pre>
+        <p>
+          You can now use the newly made JavaScript object anywhere necessary within your JavaScript.
+        </p>
+        <p>
+          Source 1: <a href="https://www.w3schools.com/whatis/whatis_json.asp" target="_blank">What is JSON?</a>
+        </p>
+        <p>
+          Source 2: <a href="https://www.json.org/json-en.html" target="_blank">Introducing JSON</a>
+        </p>
+      </div>
+      <aside id="righter"></aside>
+    </div>
+
+    <footer>
+      <p>Background image from <a href="https://unsplash.com/@jdiegoph">Diego PH</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>
