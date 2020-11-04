@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Righteous&family=Source+Sans+Pro:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/entry.css">
+    <title>React</title>
+</head>
+
+<body>
+    <div id="body-container">
+        <header><a href="index.html">&#x25C0 Main Page</a></header>
+        <div id="middler">
+            <aside id="lefter"></aside>
+            <div id="chester">
+                <p class="heading">React</p>
+                <p>
+                    React JS is a Javascript library used to build interactive elements on websites. A Javascript
+                    library is a collection of pre-written Javascript code that can used for common JS tasks. Because
+                    many webpages have repetitive functions such as animation effects or autocomplete, the programmer
+                    can use the respective libraries to fulfill the desired function without needing to rewrite these tasks. React
+                    JS is for front-end development AKA client side devleopment.
+                </p>
+                <p>
+                    React makes use of JSX or Javascript eXtension which is a React extension that makes it easy for web
+                    developers to modify DOMs (Document Object Model), a representational tree of how a web page is
+                    arranged. This acts as the skeleton of the webpage the same way HTML does. The following is an
+                    example of JSX.
+                </p>
+                <pre>
+                return (
+                    {colors.map(color => <Swatch key={color.name} color={color} remove={removeColor}/>)}
+                );
+                </pre>
+                <p>
+                    React also uses virtual DOMs which is a copy of a site's DOM that React uses to determine the parts of the page were actually changed. This prevents unnecessary entire page reloads which is extremely inefficient.
+                </p>
+                <p>
+                    Source 1: <a href="https://skillcrush.com/blog/what-is-react-js/" target="_blank">Tech 101: What is
+                        React JS?</a>
+                </p>
+                <p>
+                    Source 2: <a href="https://reactjs.org/tutorial/tutorial.html#overview" target="_blank">Tutorial: Intro to React</a>
+                </p>
+            </div>
+            <aside id="righter"></aside>
+        </div>
+
+        <footer>
+            <p>Background image from <a href="https://unsplash.com/@jdiegoph">Diego PH</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
