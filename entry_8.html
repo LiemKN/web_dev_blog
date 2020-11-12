@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Righteous&family=Source+Sans+Pro:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/entry.css">
+  <title>Redux</title>
+</head>
+
+<body>
+  <div id="body-container">
+    <header><a href="index.html">&#x25C0 Main Page</a></header>
+    <div id="middler">
+      <aside id="lefter"></aside>
+      <div id="chester">
+        <p class="heading">Redux</p>
+        <p>
+          Redux is a predicatble state container for Javascript apps. It maintains the state of an entire application in an immutable state tree. Since it's immutable, when something changes, a new state tree is created using actions and reducers. To change a state, an action needs to be dipatched where the action is a Javascript object. The following are examples of actions.
+        </p>
+        <pre>
+          { type: 'ADD_TODO', text: 'Go to swimming pool' }
+          { type: 'TOGGLE_TODO', index: 1 }
+          { type: 'SET_VISIBILITY_FILTER', filter: 'SHOW_ALL' }
+        </pre>
+        <p>
+          To link the state and actions together, you need a reducer. The reducer is a function that takes the state and action and returns the next state that should result from the action. The following are examples of reducer functions.
+        </p>
+        <pre>
+          function visibilityFilter(state = 'SHOW_ALL', action) {
+            if (action.type === 'SET_VISIBILITY_FILTER') {
+              return action.filter
+            } else {
+              return state
+            }
+          }
+          
+          function todos(state = [], action) {
+            switch (action.type) {
+              case 'ADD_TODO':
+                return state.concat([{ text: action.text, completed: false }])
+              case 'TOGGLE_TODO':
+                return state.map((todo, index) =>
+                  action.index === index
+                    ? { text: todo.text, completed: !todo.completed }
+                    : todo
+                )
+              default:
+                return state
+            }
+          }
+                </pre>
+        <p>
+          Some benefits of Redux include, predictability of outcome because the store provides clarity on how to link the current state with other parts of the application, organization because Redux is strict about how code should be organized, and ease of testing most Redux code is small and isolated.
+        </p>
+        <p>
+          Source 1: <a href="https://react-redux.js.org/introduction/why-use-react-redux" target="_blank">Why Use React Redux?</a>
+        </p>
+        <p>
+          Source 2: <a href="https://redux.js.org/introduction/core-concepts" target="_blank">Core Concepts</a>
+        </p>
+      </div>
+      <aside id="righter"></aside>
+    </div>
+
+    <footer>
+      <p>Background image from <a href="https://unsplash.com/@jdiegoph">Diego PH</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>
